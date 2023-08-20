@@ -18,14 +18,14 @@ class LoginPage extends StatelessWidget {
                   "Hello, Welcome Back",
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 22,
+                    fontSize: 24,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                const SizedBox(height: 32),
+                const SizedBox(height: 25),
                 const Text(
                   "Login to Continue",
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(color: Colors.white, fontSize: 18),
                 ),
                 const Spacer(),
                 TextField(
@@ -40,7 +40,7 @@ class LoginPage extends StatelessWidget {
                     fillColor: Colors.white.withOpacity(0.5),
                   ),
                 ),
-                const SizedBox(height: 16),
+                const SizedBox(height: 18),
                 TextField(
                   decoration: InputDecoration(
                     hintText: "Password",
@@ -66,7 +66,7 @@ class LoginPage extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(
-                  height: 32,
+                  height: 25,
                 ),
                 SizedBox(
                   width: double.infinity,
@@ -76,7 +76,13 @@ class LoginPage extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.amber,
                         foregroundColor: Colors.black),
-                    child: const Text('Login'),
+                    child: const Text(
+                      'Login',
+                      style: TextStyle(
+                        fontWeight: FontWeight.w600,
+                        fontSize: 18,
+                      ),
+                    ),
                   ),
                 ),
                 const Spacer(),
@@ -109,7 +115,13 @@ class LoginPage extends StatelessWidget {
                         const SizedBox(
                           width: 8,
                         ),
-                        const Text("Login With Google"),
+                        const Text(
+                          "Login With Google",
+                          style: TextStyle(
+                            fontWeight: FontWeight.w600,
+                            fontSize: 16,
+                          ),
+                        ),
                       ],
                     ),
                   ),
@@ -141,7 +153,13 @@ class LoginPage extends StatelessWidget {
                         const SizedBox(
                           width: 8,
                         ),
-                        const Text("Login With Facebook")
+                        const Text(
+                          "Login With Facebook",
+                          style: TextStyle(
+                            fontWeight: FontWeight.w600,
+                            fontSize: 16,
+                          ),
+                        )
                       ],
                     ),
                   ),
